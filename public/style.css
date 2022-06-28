@@ -1,0 +1,155 @@
+html {
+    overflow-y: overlay;
+}
+
+/* sidebar styling */
+
+.title h1 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(11, 11, 11);
+}
+
+.sidebar li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    border-left: 3.5px solid rgb(255, 255, 255);
+    padding-left: 5px;
+}
+
+.sidebar a:hover {
+    color: rgb(255, 193, 193);
+}
+
+.line {
+    width: 100%;
+    height: 150px;
+    border-bottom: 600px solid rgb(130, 130, 130);
+    position: absolute;
+    transform: skewY(25deg);
+}
+
+.line2 {
+    width: 100%;
+    height: 275px;
+    border-bottom: 600px solid rgb(91, 91, 91);
+    position: absolute;
+    transform: skewY(10deg);
+}
+
+/* feed entry styling */
+
+.site-page {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.feed-div {
+    width: calc(100vw - 300px);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: block;
+    float: right;
+}
+ 
+.post-create-div {
+    /* width: 80%; */
+    width: calc(100vw - 300px);
+    height: 100px;
+    position: fixed;
+    float: right;
+    background-color: rgb(255, 86, 86);
+}
+
+.create-post {
+    height: 75px;
+    background-color: rgb(255, 193, 193);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    width: 40%;
+    border: 3.5px solid rgb(255, 52, 52);
+    border-radius: 25px;
+    
+}
+
+.create-post a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    margin-right: 35%;
+}
+
+/* blog feed styling */
+
+.blog-feed {
+    margin-top: 130px;
+    margin-left: 48px;
+    margin-right: 58px;
+}
+
+.blog-entry {
+    border: 3.5px solid black;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* blog entry styling */
+
+.entry-info {
+    padding: 0;
+    border-bottom: 3.5px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(255, 193, 193);
+    
+}
+
+.entry-info ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.entry-info li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 25px;
+    top: 0;
+    
+}
+
+.date-time {
+    float: right;
+    margin-top: 5px;
+}
+
