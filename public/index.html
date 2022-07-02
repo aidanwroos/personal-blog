@@ -46,23 +46,50 @@
                 </div>
 
                 <div class="entry-content">
-                    <p>This is basic information for this blog entry</p>
+                    <p>
+                        Sample entry text
+                    </p>
                 </div>
             </div>
-
-            
-            
-
         </div>
     </div>
 
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-entry-modal" class="hidden">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3>Create new entry</h3>
+                <button type="button" class="modal-close-button">X</button>
+            </div>
+                
+            <div class="modal-body">
+                <div class="input-elementu">
+                    <label for="title-input">Title</label>
+                    <input type="text" id="title-input">
+                </div>
 
+                <div class="input-elemento">
+                    <label for="date-input">Date</label>
+                    <input type="text" id="date-input">
+                </div>
 
+                <div class="input-element1">
+                    <label for="time-input">Time</label>
+                    <input type="text" id="time-input">
+                </div>
+
+                <div class="input-element">
+                    <textarea id="blog-text-input" style="width: 800px; height: 300px;"></textarea>
+                </div>
+            </div>
+                
+            <div class="modal-footer">
+                <button type="button" class="modal-cancel-btn">Cancel</button>
+                <button type="button" class="modal-accept-btn">Create Entry</button>
+            </div>
+        </div>
+    </div>
 
 </body>
-
-
-
-
 
 </html>

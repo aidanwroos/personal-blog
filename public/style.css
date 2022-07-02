@@ -93,6 +93,10 @@ html {
     border-radius: 25px;
 }
 
+.post-create-div a:hover {
+    color: red;
+}
+
 .create-post a {
     text-decoration: none;
     font-size: 30px;
@@ -124,6 +128,11 @@ html {
 
 /* blog entry styling */
 
+.date-time {
+    float: right;
+    margin-top: 5px;
+}
+
 .entry-info {
     padding: 0;
     border-bottom: 3.5px solid black;
@@ -147,8 +156,155 @@ html {
     top: 0;
 }
 
-.date-time {
-    float: right;
-    margin-top: 5px;
+.entry-content {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+/* modal styling */
+
+#modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#create-entry-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1010;
+}
+
+.hidden {
+    
+}
+
+.modal-dialog {
+    width: auto;
+    max-width: 1000px;
+    min-width: 600px;
+    min-height: 518px;
+    margin: 70px auto;
+    background-color: #fff;
+    border-radius: 15px;
+  }
+
+  .modal-header {
+    position: relative;
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 3.5px solid black;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: rgb(67, 67, 67);
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .modal-header h3 {
+    margin: 0;
+    font-size: 28px;
+    display: inline-block;
+  }
+
+  .modal-close-button {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 24px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  .modal-close-button:hover {
+    color: red;
+  }
+  
+  .modal-body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+  }
+
+  .input-elementu {
+    display: inline;
+    margin-left: 97px;
+  }
+
+  .input-elemento {
+    display: inline;
+    position: fixed;
+    margin-left: 70px;
+  }
+
+  .input-element1 {
+    display: inline;
+    float: right;
+    margin-right: 97px;
+  }
+
+  .input-element {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  #blog-text-input {
+    resize: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .modal-footer {
+    padding-left: 20px;
+    padding-right: 98px;
+    padding-bottom: 20px;
+    float: right;
+  }
+
+  .modal-cancel-btn {
+    margin-right: 15px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .modal-accept-btn {
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 97, 97);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+
+
 
