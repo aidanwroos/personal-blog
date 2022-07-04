@@ -84,29 +84,35 @@ html {
 
 .create-post {
     height: 75px;
-    background-color: rgb(255, 193, 193);
+    background-color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
     margin-top: 18px;
     width: 40%;
-    border: 3.5px solid rgb(0, 0, 0);
-    border-radius: 25px;
 }
 
 .post-create-div a:hover {
     color: red;
 }
 
-.create-post a {
+#new-entry-button {
     text-decoration: none;
     font-size: 30px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     color: rgb(0, 0, 0);
     position: relative;
-    float: right;
-    margin-top: 20px;
-    margin-right: 35%;
+    padding: 10px;
+    margin-left: 147.26px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-entry-button:hover {
+    background-color: rgb(99, 99, 99);
+    color: white;
+    transition: 0.4s;
 }
 
 /* blog feed styling */
@@ -127,6 +133,11 @@ html {
 }
 
 /* blog entry styling */
+
+.date-spec {
+    float: right;
+    margin-top: 5px;
+}
 
 .date-time {
     float: right;
@@ -185,7 +196,7 @@ html {
 }
 
 .hidden {
-    
+    display: none;
 }
 
 .modal-dialog {

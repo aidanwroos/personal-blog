@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <script src="server.js"></script>
+    <script src="index.js" charset="utf-8" defer></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
@@ -30,18 +30,20 @@
     <div class="feed-div">
         <div class="post-create-div">
             <div class="create-post">
-                <a href="#">+ New entry</a>
+                <button type="button" id="new-entry-button">+ New Entry</button>
+                <!-- <a href="#">+ New entry</a> -->
             </div>
         </div>
 
         <div class="blog-feed">
+
+
             <div class="blog-entry">
                 <div class="entry-info">
                     <ul>
                         <li><h2>Entry title</h2></li>
                         <li class="date-time"><h3>Time</h3></li>
-                        <li class="date-time"><h3>Date</h3></li>
-                        
+                        <li class="date-spec"><h3>Date</h3></li>
                     </ul>
                 </div>
 
@@ -51,6 +53,8 @@
                     </p>
                 </div>
             </div>
+
+
         </div>
     </div>
 
