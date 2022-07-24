@@ -1,7 +1,10 @@
 
+
 var newEntryButton = document.getElementById("new-entry-button");
 
+
 var xOutButton = document.getElementsByClassName("modal-close-button")[0];
+
 
 var modalCancelBtn = document.getElementsByClassName("modal-cancel-btn")[0];
 
@@ -14,6 +17,13 @@ var blogPostContainer = document.getElementsByClassName("blog-feed")[0];
 
 var h = document.querySelectorAll(".hidden");
 
+
+function blogData(TITLE, DATE, TIME, CONTEXT) {
+    this.blogTITLE = TITLE;
+    this.blogDATE = DATE;
+    this.blogTIME = TIME;
+    this.blogTEXT = CONTEXT;
+}
 
 // Event listener for when new entry button is clicked
 newEntryButton.onclick = function() {
@@ -111,14 +121,34 @@ createEntryBtn.onclick = function() {
                         var dd = document.createTextNode(dText);
                         dateText.appendChild(dd);
 
-        // Inserting the blog post data here
+            //Inserting the blog post data here
+            var blogContentEntry = document.createElement('div');
+            blogContentEntry.classList.add("entry-content");
+            newBlogPost.appendChild(blogContentEntry);
 
+            var blogText = document.createElement('p');
+            blogContentEntry.appendChild(blogText);
 
+            var blogUserInput = document.getElementById("blog-text-input").value;
+            var ii = document.createTextNode(blogUserInput);
+            blogText.appendChild(ii);
 
-
-
-        //adding blog post to feed
+    
+        //Adding blog post to feed
         blogPostContainer.appendChild(newBlogPost);
+
+
+        //Saving blog post data to a JSON file here
+        
+        //Declare new object
+        const blog_obj = new blogData(tText,dText,qText,blogUserInput);
+
+        //Insert data into JSON file
+        blogEntries.push(blog_obj);
+
+        //Close the modal after the information is inserted
+        document.getElementById("modal-backdrop").classList.add("hidden");
+        document.getElementById("create-entry-modal").classList.add("hidden");
     }
 
 
