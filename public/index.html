@@ -7,7 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="style.css">
+    <!-- stylesheet hookups -->
+    <link rel="stylesheet" href="new-entry-modal-style.css">
+    <link rel="stylesheet" href="settings-style.css">
+    <link rel="stylesheet" href="sidebar-style.css">
+    <link rel="stylesheet" href="body-style.css">
+    <link rel="stylesheet" href="feed-entry-style.css">
+
+    <!-- javascript hookups -->
     <script type="text/javascript" src="index.js" charset="utf-8"></script>
     <script type="text/javascript" src="blog-data.json"></script>
 
@@ -26,6 +33,11 @@
         <li><a href="#">About</a></li>
         <div class="line"></div>
         <div class="line2"></div>
+
+        <div class="settings">
+            <input id="settings-button" type="image" src="settings_btn.png">
+        </div>
+
     </div>
 
     <div class="feed-div">
@@ -36,29 +48,11 @@
             </div>
         </div>
 
-        <div class="blog-feed">
-
-
-            <!-- <div class="blog-entry">
-                <div class="entry-info">
-                    <ul>
-                        <li><h2>Entry title</h2></li>
-                        <li class="date-time"><h3>Time</h3></li>
-                        <li class="date-spec"><h3>Date</h3></li>
-                    </ul>
-                </div>
-
-                <div class="entry-content">
-                    <p>
-                        Sample entry text
-                    </p>
-                </div>
-            </div> -->
-
-
-        </div>
+        <div class="blog-feed"></div>
     </div>
 
+    <!-- Modal backdrop that displays input boxes for the user to create a new blog post -->
+    
     <div id="modal-backdrop" class="hidden"></div>
     <div id="create-entry-modal" class="hidden">
         <div class="modal-dialog">
@@ -93,6 +87,27 @@
                 <button type="button" class="modal-accept-btn">Create Entry</button>
             </div>
         </div>
+    </div>
+
+
+    <!-- Modal backdrop that displays input boxes for the user to change the site settings -->
+    <div class="settings-backdrop" class="hidden"></div>
+    <div class="settings-modal" class="hidden">
+        <div class="settings-dialog">
+            <div class="settings-header">
+                <h3>Settings</h3>
+                <button type="button" class="settings-exit-button">X</button>
+            </div>
+
+            <div class="settings-modal-body">
+                <div class="settings-input-container"> <!-- A div box that contains all of the settings inputs (checkboxes etc.) -->
+                    
+
+
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>

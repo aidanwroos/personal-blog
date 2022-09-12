@@ -1,0 +1,77 @@
+/* sidebar styling */
+
+.title h1 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(11, 11, 11);
+}
+
+.sidebar li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-left: 3.5px solid rgb(255, 255, 255);
+    padding-left: 5px;
+}
+
+.sidebar a:hover {
+    color: rgb(255, 193, 193);
+}
+
+.line {
+    z-index: 0;
+    width: 100%;
+    height: 150px;
+    border-bottom: 600px solid rgb(130, 130, 130);
+    position: absolute;
+    transform: skewY(25deg);
+}
+
+.line2 {
+  z-index: 0;
+    width: 100%;
+    height: 275px;
+    border-bottom: 600px solid rgb(91, 91, 91);
+    position: absolute;
+    transform: skewY(10deg);
+}
+
+.settings {
+  position: fixed;
+  /* top: 600px; */
+  bottom: 0px;
+}
+
+#settings-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#settings-button:hover {
+  transform: scale(0.8);
+}
